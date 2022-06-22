@@ -156,7 +156,7 @@ option(USE_QCINT "Using the qcint library (optimized for x86-64) for gaussian in
 
 if(BUILD_LIBCINT)
 if(NOT EXISTS "${PROJECT_SOURCE_DIR}/deps/include/cint.h")
-  set(LIBCINT_GIT https://github.com/sunqm/libcint.git) # libcint is a portable, cross-platform implementation
+  set(LIBCINT_GIT https://github.com/szgoger/libcint.git) # libcint is a portable, cross-platform implementation
   if (USE_QCINT)
     set(LIBCINT_GIT https://github.com/sunqm/qcint.git) # qcint is an optimized implementation for x86-64 architecture
     if(NOT BUILD_MARCH_NATIVE)

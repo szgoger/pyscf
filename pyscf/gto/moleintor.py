@@ -61,9 +61,14 @@ def getints(intor_name, atm, bas, env, shls_slice=None, comp=None, hermi=0,
             "int1e_igovlp"                    (#C(0 1) g \|\)
             "int1e_ignuc"                     (#C(0 1) g \| nuc \|\)
             "int1e_z"                         ( \| zc \| \)
+            "int1e_x"                         ( \| xc \| \)
+            "int1e_y"                         ( \| yc \| \)
             "int1e_zz"                        ( \| zc zc \| \)
+            "int1e_xx"                        ( \| xc xc \| \)
+            "int1e_yy"                        ( \| yc yc \| \)
             "int1e_r"                         ( \| rc \| \)
             "int1e_r2"                        ( \| rc dot rc \| \)
+            "int1e_r4"                        ( \| rc dot rc rc dot rc \| \)
             "int1e_rr"                        ( \| rc rc \| \)
             "int1e_rrr"                       ( \| rc rc rc \| \)
             "int1e_rrrr"                      ( \| rc rc rc rc \| \)
@@ -276,9 +281,14 @@ _INTOR_FUNCTIONS = {
     'int1e_ignuc'               : (3, 3),
     'int1e_pnucp'               : (1, 1),
     'int1e_z'                   : (1, 1),
+    'int1e_x'                   : (1, 1),
+    'int1e_y'                   : (1, 1),
     'int1e_zz'                  : (1, 1),
+    'int1e_xx'                  : (1, 1),
+    'int1e_yy'                  : (1, 1),
     'int1e_r'                   : (3, 3),
     'int1e_r2'                  : (1, 1),
+    'int1e_r4'                  : (1, 1),
     'int1e_rr'                  : (9, 9),
     'int1e_rrr'                 : (27, 27),
     'int1e_rrrr'                : (81, 81),
